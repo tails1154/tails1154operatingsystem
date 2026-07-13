@@ -1,0 +1,133 @@
+# tails1154OS - x86_64 packages
+
+# === BASE SYSTEM ===
+base
+base-devel
+linux
+linux-firmware
+amd-ucode
+intel-ucode
+mkinitcpio
+mkinitcpio-archiso
+btrfs-progs
+cryptsetup
+dmraid
+dosfstools
+e2fsprogs
+efibootmgr
+exfatprogs
+f2fs-tools
+gptfdisk
+jfsutils
+lvm2
+mdadm
+nilfs-utils
+ntfs-3g
+parted
+squashfs-tools
+udftools
+xfsprogs
+
+# === BOOTLOADER ===
+grub
+os-prober
+syslinux
+
+# === NETWORKING ===
+networkmanager
+network-manager-applet
+iwd
+iw
+wireless-regdb
+wireless_tools
+wpa_supplicant
+dhcpcd
+bind
+dnsmasq
+nfs-utils
+openssh
+openvpn
+rsync
+reflector
+
+# === DESKTOP: KDE PLASMA ===
+plasma-meta
+kde-applications-meta
+sddm
+sddm-kcm
+xorg-server
+xorg-xinit
+mesa
+vulkan-intel
+vulkan-radeon
+nvidia-dkms
+nvidia-utils
+nvidia-settings
+pipewire
+pipewire-alsa
+pipewire-pulse
+pipewire-jack
+wireplumber
+sof-firmware
+
+# === AI / OLLAMA ===
+ollama
+python
+python-pip
+
+# === BROWSER & TOOLS ===
+# trowser replaces firefox as default browser
+webkitgtk-6.0
+gtk4
+python-gobject
+python-cryptography
+libsoup3
+kate
+konsole
+dolphin
+ark
+gwenview
+spectacle
+kcalc
+kwrite
+krunner
+vlc
+
+# === SYSTEM TOOLS ===
+sudo
+man-db
+man-pages
+vim
+nano
+less
+zsh
+bash-completion
+kitty-terminfo
+foot-terminfo
+rxvt-unicode-terminfo
+htop
+btop
+fastfetch
+pciutils
+usbutils
+git
+curl
+wget
+unzip
+zip
+p7zip
+
+xdg-user-dirs
+
+# === PRINTERS (OPTIONAL) ===
+cups
+print-manager
+
+# === INSTALLER ===
+calamares
+arch-install-scripts
+archinstall
+
+# === LIVE SYSTEM ===
+reflector
+grml-zsh-config

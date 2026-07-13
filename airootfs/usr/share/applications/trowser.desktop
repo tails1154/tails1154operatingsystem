@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Trowser
+Comment=Browse with WebKit and local AI
+Exec=trowser
+Icon=web-browser
+Terminal=false
+Type=Application
+Categories=Network;WebBrowser;
+MimeType=text/html;x-scheme-handler/http;x-scheme-handler/https;
+StartupNotify=true

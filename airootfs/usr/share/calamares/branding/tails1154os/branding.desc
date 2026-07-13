@@ -1,0 +1,43 @@
+---
+componentName:  tails1154os
+
+welcomeStyleCalamares:   false
+welcomeExpandingLogo:   true
+
+windowExpanding:    normal
+windowSize: 1024px,600px
+windowPlacement: center
+
+sidebar: widget
+navigation: widget
+
+strings:
+    productName:         "tails1154OS"
+    shortProductName:    tails1154OS
+    version:             2026.7
+    shortVersion:        2026.7
+    versionedName:       tails1154OS 2026.7
+    shortVersionedName:  tails1154OS 2026.7
+    bootloaderEntryName: tails1154OS
+    productUrl:          https://github.com/tails1154/tails1154os
+    supportUrl:          https://github.com/tails1154/tails1154os
+    knownIssuesUrl:      https://github.com/tails1154/tails1154os/issues
+    releaseNotesUrl:     https://github.com/tails1154/tails1154os/releases
+    donateUrl:
+
+images:
+    productIcon:         ""
+    productLogo:         ""
+    productWelcome:      ""
+
+style:
+    SidebarBackground:        "#1a1a2e"
+    SidebarText:              "#e0e0e0"
+    SidebarTextCurrent:       "#1a1a2e"
+    SidebarBackgroundCurrent: "#00d4aa"
+
+slideshow: "show.qml"
+slideshowAPI: 2
+
+uploadServer:
+    type: "none"

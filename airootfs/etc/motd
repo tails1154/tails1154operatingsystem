@@ -1,0 +1,6 @@
+Welcome to tails1154OS - Arch Linux with KDE Plasma
+
+This is a live environment. To install permanently, run: archinstall
+
+For WiFi: use NetworkManager (nm-applet in system tray or 'nmtui' in terminal)
+Ollama is preinstalled! Run: ollama serve

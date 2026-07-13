@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Install tails1154OS
+Comment=Install tails1154OS to your computer
+Exec=calamares
+Icon=calamares
+Terminal=false
+Type=Application
+Categories=Qt;System;

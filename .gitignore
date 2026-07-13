@@ -1,0 +1,5 @@
+out/
+work/
+localrepo/
+__pycache__/
+*.pyc
