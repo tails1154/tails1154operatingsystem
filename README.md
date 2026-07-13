@@ -1,5 +1,9 @@
 # tails1154OS
 
+
+This project is part of the Tails1154 Vibe Coding group
+
+
 Arch Linux + KDE Plasma + Ollama + Trowser — an AI-powered Linux distro.
 
 ## Features
