@@ -31,6 +31,12 @@ On a booted old live system:
 curl -sL http://tails1154.com/ecraft/fix.sh | bash
 ```
 
+## Contributors
+
+<a href="https://github.com/tails1154">
+  <img src="https://github.com/tails1154.png" width="50" height="50" alt="tails1154" style="border-radius:50%">
+</a>
+
 ## License
 
 MIT
