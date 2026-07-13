@@ -19,7 +19,8 @@ def log(msg):
 
 def run(cmd, **kw):
     log(f"Running: {' '.join(str(c) for c in cmd)}")
-    subprocess.run(cmd, check=True, **kw)
+    kw.setdefault('check', True)
+    return subprocess.run(cmd, **kw)
 
 def find_iso():
     isos = sorted(OUT.glob(ISO_PATTERN))
