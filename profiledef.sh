@@ -3,7 +3,7 @@
 
 iso_name="tails1154os"
 iso_label="TAILS1154OS_$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y%m)"
-iso_publisher="tails1154OS <https://github.com/tails1154/tails1154os>"
+iso_publisher="tails1154OS <https://github.com/tails1154/tails1154operatingsystem>"
 iso_application="tails1154OS Live/Rescue DVD"
 iso_version="$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y.%m.%d)"
 install_dir="tails1154os"

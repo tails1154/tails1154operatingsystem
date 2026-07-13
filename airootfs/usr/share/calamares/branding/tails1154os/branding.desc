@@ -19,10 +19,10 @@ strings:
     versionedName:       tails1154OS 2026.7
     shortVersionedName:  tails1154OS 2026.7
     bootloaderEntryName: tails1154OS
-    productUrl:          https://github.com/tails1154/tails1154os
-    supportUrl:          https://github.com/tails1154/tails1154os
-    knownIssuesUrl:      https://github.com/tails1154/tails1154os/issues
-    releaseNotesUrl:     https://github.com/tails1154/tails1154os/releases
+    productUrl:          https://github.com/tails1154/tails1154operatingsystem
+    supportUrl:          https://github.com/tails1154/tails1154operatingsystem
+    knownIssuesUrl:      https://github.com/tails1154/tails1154operatingsystem/issues
+    releaseNotesUrl:     https://github.com/tails1154/tails1154operatingsystem/releases
     donateUrl:
 
 images:
