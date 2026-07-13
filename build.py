@@ -6,6 +6,8 @@ import subprocess
 import shutil
 import os
 import sys
+import threading
+import time
 from pathlib import Path
 from datetime import datetime
 
@@ -17,8 +19,20 @@ ISO_PATTERN = "tails1154os-*.iso"
 def log(msg):
     print(f"[{datetime.now():%H:%M:%S}] {msg}")
 
+_sudo_loop = None
+
+def sudoloop():
+    while True:
+        time.sleep(60)
+        subprocess.run(["sudo", "-v"], check=False)
+
 def run(cmd, **kw):
     log(f"Running: {' '.join(str(c) for c in cmd)}")
+    if cmd and "sudo" in (cmd[0] if isinstance(cmd, list) else str(cmd).split()[0]):
+        global _sudo_loop
+        if _sudo_loop is None:
+            _sudo_loop = threading.Thread(target=sudoloop, daemon=True)
+            _sudo_loop.start()
     kw.setdefault('check', True)
     return subprocess.run(cmd, **kw)
 

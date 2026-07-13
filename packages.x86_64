@@ -89,6 +89,9 @@ cmatrix
 sl
 fortune-mod
 ponysay
+# vibecoder is pre-built in airootfs
+rust
+cargo
 
 # === BROWSER & TOOLS ===
 # trowser replaces firefox as default browser
