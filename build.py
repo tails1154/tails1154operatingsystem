@@ -96,6 +96,9 @@ def main():
     qemu.add_argument("--iso", help="ISO path (default: latest in out/)")
     qemu.add_argument("-m", "--memory", default="4G", help="RAM (default: 4G)")
 
+    flash = sub.add_parser("flash", help="Build + copy to USB (no QEMU)")
+    flash.add_argument("device", help="e.g. /dev/sda")
+
     all_p = sub.add_parser("all", help="Build + copy + qemu in sequence")
     all_p.add_argument("device", nargs="?", help="USB device (optional)")
     all_p.add_argument("--memory", default="4G")
@@ -112,6 +115,10 @@ def main():
         cmd_copy(args)
     elif args.command == "qemu":
         cmd_qemu(args)
+    elif args.command == "flash":
+        iso = cmd_build(args)
+        args.iso = iso
+        cmd_copy(args)
     elif args.command == "all":
         iso = cmd_build(args)
         args.iso = iso
