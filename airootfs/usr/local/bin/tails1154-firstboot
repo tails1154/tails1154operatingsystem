@@ -32,8 +32,8 @@ done
 update "Setting up Flathub..."
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo 2>/dev/null || true
 
-update "Installing Sober (Roblox)..."
-flatpak install -y flathub org.vinegarhq.Sober 2>/dev/null || true
+update "Installing Sober (Roblox) + Vesktop (Discord)..."
+flatpak install -y flathub org.vinegarhq.Sober dev.vencord.Vesktop 2>/dev/null || true
 
 close
 
@@ -42,4 +42,4 @@ nohup plasmashell &>/dev/null &
 disown
 
 touch "$MARKER"
-kdialog --title "tails1154OS" --msgbox "All done! AI models are ready.\nOpen Sober from your app menu for Roblox." 2>/dev/null || true
+kdialog --title "tails1154OS" --msgbox "All done!\n\nAI models: llama3.2 + qwen2.5 ready to use\nSober (Roblox) installed\nVesktop (Discord) installed\n\nEnjoy your bloat." 2>/dev/null || true
