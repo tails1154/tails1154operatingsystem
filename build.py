@@ -49,7 +49,11 @@ def cmd_copy(args):
         sys.exit(1)
 
     log(f"Writing {iso} to {args.device}...")
-    run(["sudo", "dd", f"if={iso}", f"of={args.device}", "bs=100M", "status=progress", "oflag=sync"])
+    size = os.path.getsize(iso)
+    if shutil.which("pv"):
+        subprocess.run(f"pv -s {size} '{iso}' | sudo dd of='{args.device}' bs=100M oflag=sync", shell=True, check=True)
+    else:
+        run(["sudo", "dd", f"if={iso}", f"of={args.device}", "bs=100M", "status=progress", "oflag=sync"])
     log(f"Done! {args.device} is bootable.")
 
 def cmd_qemu(args):
