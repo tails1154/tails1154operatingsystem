@@ -75,6 +75,21 @@ ollama
 python
 python-pip
 
+# === GAMING ===
+steam
+steam-devices
+gamescope
+flatpak
+discover
+# === BLOATWARE ===
+cowsay
+figlet
+lolcat
+cmatrix
+sl
+fortune-mod
+ponysay
+
 # === BROWSER & TOOLS ===
 # trowser replaces firefox as default browser
 webkitgtk-6.0

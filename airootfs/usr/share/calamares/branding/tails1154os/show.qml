@@ -4,90 +4,70 @@ import calamares.slideshow 1.0;
 Presentation
 {
     id: presentation
-
     Timer {
         interval: 5000
         running: presentation.activatedInCalamares
         repeat: true
         onTriggered: presentation.goToNextSlide()
     }
-
     Slide {
         title: "tails1154OS"
         content: [
-            "Arch Linux + KDE Plasma + AI",
-            "Welcome to the future of desktop computing.",
+            "Arch Linux + KDE Plasma + AI + Gaming",
+            "The most bloat-maxxed distro on Earth.",
             "",
-            "This installer will guide you through setting up",
-            "your AI-powered operating system.",
+            "Built-in AI, Steam, Roblox (via Sober Flatpak),",
+            "and every useless terminal toy you could want.",
         ]
-        textFormat: Text.RichText
     }
-
     Slide {
         title: "Built-in AI with Ollama"
         content: [
-            "Ollama is pre-installed and ready to go.",
-            "Run local LLMs without any cloud dependency.",
+            "Ollama is pre-installed.",
+            "Run local LLMs: llama3.2, qwen2.5, and more.",
+            "Pull models on first boot or anytime:",
+            "  ollama pull <model>",
             "",
-            "Pre-configured models:",
-            "  - llama3.2:3b (lightweight chat)",
-            "  - qwen2.5:1.5b (fast inference)",
-            "",
-            "Pull more models anytime: ollama pull <model>",
+            "Trowser browser has built-in Ollama chat.",
         ]
     }
-
     Slide {
-        title: "Trowser - AI Web Browser"
+        title: "Gaming Ready"
         content: [
-            "Trowser is a WebKit-based browser with",
-            "built-in Ollama integration for AI-powered",
-            "browsing and local assistance.",
-            "",
-            "Features:",
-            "  - Encrypted password vault",
-            "  - TailsAccount cloud sync",
-            "  - Local AI chatbot integration",
-            "  - Privacy-first design",
+            "Steam + Steam Devices pre-installed.",
+            "Gamescope for compositor-free gaming.",
+            "Flatpak with Sober (Roblox) ready to go.",
+            "Discover app center for all your apps.",
         ]
     }
-
+    Slide {
+        title: "Essential Bloatware"
+        content: [
+            "cowsay, figlet, lolcat, cmatrix,",
+            "sl, fortune-mod, ponysay...",
+            "All the terminal nonsense you'll never use",
+            "but definitely need.",
+        ]
+    }
     Slide {
         title: "KDE Plasma Desktop"
         content: [
-            "Beautiful, modern desktop environment.",
-            "Fully customizable with widgets, themes,",
-            "and Plasma Addons.",
-            "",
-            "Includes:",
-            "  - SDDM display manager",
-            "  - PipeWire audio",
-            "  - NetworkManager",
-            "  - Full KDE Applications suite",
+            "Beautiful, modern, customizable.",
+            "SDDM display manager, PipeWire audio,",
+            "NetworkManager, and full KDE suite.",
         ]
     }
-
     Slide {
         title: "Get Started"
         content: [
-            "You're about to install tails1154OS.",
-            "Follow the steps ahead to configure:",
+            "Follow the steps to install.",
+            "AI models pull on first boot.",
+            "Install Sober for Roblox:",
+            "  flatpak install flathub org.vinegarhq.Sober",
             "",
-            "  1. Language & Location",
-            "  2. Keyboard Layout",
-            "  3. Disk Partitioning",
-            "  4. User Account",
-            "  5. Installation Summary",
-            "",
-            "AI models will be pulled on first boot.",
+            "Welcome to the bloat. Welcome home.",
         ]
     }
-
-    function onActivate() {
-        presentation.currentSlide = 0;
-    }
-
-    function onLeave() {
-    }
+    function onActivate() { presentation.currentSlide = 0; }
+    function onLeave() {}
 }

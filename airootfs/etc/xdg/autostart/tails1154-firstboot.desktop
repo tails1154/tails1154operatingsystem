@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=AI Model Setup
+Comment=Downloading AI models for tails1154OS
+Exec=tails1154-firstboot
+Icon=ollama
+Terminal=false
+Type=Application
+Categories=Settings;
+X-KDE-autostart-phase=2
+X-KDE-autostart-after=plasma-desktop
