@@ -3,3 +3,6 @@ work/
 localrepo/
 __pycache__/
 *.pyc
+*.log
+asdf
+err.log
