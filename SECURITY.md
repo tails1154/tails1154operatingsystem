@@ -2,8 +2,8 @@
 
 ## Reporting a Vulnerability
 
-If you discover a security vulnerability, please open an issue at:
+If you discover a security vulnerability, please email:
 
-https://github.com/tails1154/tails1154operatingsystem/issues
+**osc.security@tails1154.com**
 
 Do not disclose the issue publicly until it has been addressed.
