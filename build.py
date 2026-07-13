@@ -49,7 +49,7 @@ def cmd_copy(args):
         sys.exit(1)
 
     log(f"Writing {iso} to {args.device}...")
-    run(["sudo", "dd", f"if={iso}", f"of={args.device}", "bs=4M", "status=progress", "oflag=sync"])
+    run(["sudo", "dd", f"if={iso}", f"of={args.device}", "bs=100M", "status=progress", "oflag=sync"])
     log(f"Done! {args.device} is bootable.")
 
 def cmd_qemu(args):
