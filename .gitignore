@@ -6,3 +6,4 @@ __pycache__/
 *.log
 asdf
 err.log
+fix.sh
