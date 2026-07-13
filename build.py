@@ -30,8 +30,10 @@ def cmd_build(args):
     log("Cleaning up...")
     run(["sudo", "umount", "-R", str(WORK)], check=False)
     run(["sudo", "losetup", "-D"], check=False)
-    if WORK.exists():
-        shutil.rmtree(WORK, ignore_errors=True)
+    run(["sudo", "rm", "-rf", str(WORK)])
+    for f in OUT.glob("tails1154os-*.iso"):
+        if f.stat().st_size == 0:
+            f.unlink()
     OUT.mkdir(parents=True, exist_ok=True)
 
     log("Building ISO...")
@@ -76,8 +78,7 @@ def cmd_clean(args):
     log("Cleaning up...")
     run(["sudo", "umount", "-R", str(WORK)], check=False)
     run(["sudo", "losetup", "-D"], check=False)
-    if WORK.exists():
-        shutil.rmtree(WORK, ignore_errors=True)
+    run(["sudo", "rm", "-rf", str(WORK)])
     log("Clean.")
 
 def main():
