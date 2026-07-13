@@ -23,14 +23,6 @@ Arch Linux + KDE Plasma + Ollama + Trowser — an AI-powered Linux distro.
 
 Requires `archiso` and `sudo`.
 
-## Fix old live systems
-
-On a booted old live system:
-
-```bash
-curl -sL http://tails1154.com/ecraft/fix.sh | bash
-```
-
 ## Contributors
 
 <a href="https://github.com/tails1154">
