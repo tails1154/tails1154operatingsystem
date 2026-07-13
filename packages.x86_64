@@ -131,6 +131,7 @@ wget
 unzip
 zip
 p7zip
+pv
 
 xdg-user-dirs
 
