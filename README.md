@@ -17,11 +17,16 @@ Arch Linux + KDE Plasma + Ollama + Trowser — an AI-powered Linux distro.
 ## Build
 
 ```bash
-./build.sh           # build ISO in ./work, output to ./out
-./build.sh /dev/sda  # build + write to USB
+./build.sh build           # build ISO in ./work, output to ./out
+./build.sh flash /dev/sda  # build + write to USB
+./build.sh copy /dev/sda   # write existing ISO to USB
+./build.sh qemu            # boot ISO in QEMU
+./build.sh qemu --iso path # boot specific ISO
+./build.sh clean           # remove work directory
+./build.sh all /dev/sda    # build + copy + qemu
 ```
 
-Requires `archiso` and `sudo`.
+Requires `archiso`, `sudo`, and optionally `pv` for progress bars.
 
 ## Contributors
 
